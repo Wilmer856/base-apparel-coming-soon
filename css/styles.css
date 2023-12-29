@@ -1,0 +1,284 @@
+
+/* Universal styles */
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-image: url("../images/bg-pattern-desktop.svg");
+    margin: 0;
+}
+
+
+/* main container layout styles */
+
+.main-container {
+    display: flex;
+}
+
+
+/* end of main container styles */
+
+
+/* sign up page section */
+
+.image-container-2 {
+    display: none;
+}
+
+.sign-up {
+    height: 100vh;
+    padding: 6rem 0 0 14rem;
+    flex-basis: 60vw;
+}
+
+.text-container {
+    width: 50rem
+}
+
+.coming-soon {
+    color: hsl(0, 6%, 24%);
+    font-size: 10rem;
+    letter-spacing: 1rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.coming-soon span {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+.sign-up-desc {
+    color: hsl(0, 36%, 70%);
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+
+/* text field and button styles */
+
+.form-container {
+    position: relative;
+}
+.email-input {
+    font-size: 1.6rem;
+    border: 2px solid hsla(0, 36%, 70%, .3);
+    border-radius: 25px;
+    height: 5rem;
+    padding-left: 3rem;
+    outline: none;
+    width: 100%;
+}
+
+.email-input::placeholder {
+    color: hsla(0, 36%, 70%, .6);
+}
+
+.email-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border: none;
+    border-radius: 25px;
+    box-shadow: hsla(0, 93%, 68%, .7) 0px 25px 50px -12px;
+    cursor: pointer;
+    height: 100%;
+    width: 9rem;
+}
+
+.email-btn:hover {
+    background: hsla(0, 93%, 68%, .3);
+    box-shadow: hsla(0, 36%, 70%, .8) 0px 40px 40px -7px;
+}
+
+.error-container {
+    display: none;
+    position: absolute;
+    top: 13px;
+    right: 10rem;
+}
+
+.error-text {
+    display: none;
+    color: hsl(0, 93%, 68%);
+    font-size: 1.4rem;
+    padding-left: 4rem;
+}
+
+
+
+/* end of text field and button styles */
+
+
+
+/*  end of sign up page section */
+
+
+/* image container */
+
+.image-container {
+    height: 100vh;
+    width: 40vw;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* end of image container styles */
+
+
+@media screen and (max-width: 1125px) {
+
+    .main-container {
+        height: 100%;
+        gap: 2rem;
+    }
+    .sign-up {
+        padding: 6rem 0 0 8rem;
+        flex-basis: 50vw;
+    }
+
+    .coming-soon {
+        font-size: 8rem;
+    }
+
+    .image-container {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .main-container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 2rem 0 0 2rem;
+    }
+
+    .text-container {
+        text-align: center;
+        width: 100%;
+    }
+
+    .sign-up {
+        flex-basis: auto;
+        height: 100%;
+        padding: 0;
+    }
+
+    .sign-up-desc {
+        padding: 0 10rem;
+        font-size: 1.6rem;
+    }
+
+    .coming-soon {
+        font-size: 7rem;
+    }
+
+    .image-container-2 {
+        display: inline-block;
+        margin-top: 3rem;
+        width: 100%;
+        height: 50rem;
+    }
+
+    .image-container-2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .image-container {
+        display: none;
+    }
+
+    .image-container img {
+        display: none;
+    }
+
+    .form-container {
+        margin: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .main-container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 2rem 0 0 2rem;
+    }
+
+    .text-container {
+        text-align: center;
+        width: 100%;
+    }
+
+    .sign-up {
+        flex-basis: auto;
+        height: 100%;
+        padding: 0;
+    }
+
+    .sign-up-desc {
+        padding: 0 3rem;
+        font-size: 1.4rem;
+    }
+
+    .coming-soon {
+        font-size: 5rem;
+    }
+
+    .image-container-2 {
+        display: inline-block;
+        margin-top: 3rem;
+        width: 100%;
+        height: 30rem;
+        /* object-fit: cover; */
+    }
+
+    .image-container-2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .image-container {
+        display: none;
+    }
+
+    .image-container img {
+        display: none;
+    }
+
+    .form-container {
+        margin: 2.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
